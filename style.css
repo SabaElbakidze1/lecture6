@@ -1,0 +1,74 @@
+body{z-index: 1000;
+	margin: 0;
+  /* background blue color www.webgradients.com */
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+    
+  );
+  /* to hide scrall on Y */
+  overflow-y: hidden;
+ 
+}
+.back{
+	width: 1445px;
+    height: 775px;
+	margin: auto;
+    position: relative;
+   
+}
+.night{
+	width: 1400px;
+	height: 700px;
+	margin: auto;
+    margin-top: 150px;
+    border: 1px solid black;
+   -webkit-box-shadow: 2px 1px 15px 3px #fff8af;
+    box-shadow: 2px 1px 15px 3px #fff8af;
+    overflow-x: hidden;
+}
+.road{
+	width: 1445px;
+	height: 144px;
+	position: absolute;
+    margin-top: -200px;
+    background-repeat: repeat-x;
+    animation: moveRight 0s linear infinite;
+}
+.palm{
+	width: 1400px;
+	height: 200px;
+}
+.carr{
+	width: 311px;
+	height: 77px;
+    margin-top: -183px;   
+    margin-left: 290px;
+    position: absolute;
+    animation: suspension 1s linear infinite;
+}
+
+/* animations */
+
+@keyframes moveRight {
+  100% {
+    transform: translateX(-2950px);
+  }
+}
+
+@keyframes suspension {
+  /* car go up and down */
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+/* star shooting */
